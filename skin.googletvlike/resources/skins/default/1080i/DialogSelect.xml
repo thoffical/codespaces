@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="3">
+  <!-- Select Dialog - For displaying lists of selectable items -->
+  
+  <backgroundcolor>background_dark</backgroundcolor>
+  
+  <!-- Semi-transparent overlay -->
+  <control type="image">
+    <posx>0</posx>
+    <posy>0</posy>
+    <width>1920</width>
+    <height>1080</height>
+    <texture colordiffuse="overlay_dark">-</texture>
+  </control>
+  
+  <!-- Dialog Container -->
+  <control type="group">
+    <posx>300</posx>
+    <posy>150</posy>
+    <width>1320</width>
+    <height>780</height>
+    
+    <!-- Background -->
+    <control type="image">
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1320</width>
+      <height>780</height>
+      <texture colordiffuse="surface">-</texture>
+      <bordertexture border="20">-</bordertexture>
+    </control>
+    
+    <!-- Header -->
+    <control type="group" id="100">
+      <posx>40</posx>
+      <posy>30</posy>
+      <width>1240</width>
+      <height>60</height>
+      
+      <!-- Title -->
+      <control type="label" id="1">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1240</width>
+        <height>60</height>
+        <font>HeadlineLarge</font>
+        <textcolor>text_primary</textcolor>
+        <label>Select an option</label>
+      </control>
+    </control>
+    
+    <!-- Divider -->
+    <control type="image">
+      <posx>40</posx>
+      <posy>100</posy>
+      <width>1240</width>
+      <height>1</height>
+      <texture colordiffuse="surface_variant">-</texture>
+    </control>
+    
+    <!-- List Container -->
+    <control type="list" id="3">
+      <posx>40</posx>
+      <posy>110</posy>
+      <width>1240</width>
+      <height>600</height>
+      <pagecontrol>13</pagecontrol>
+      <scrolloffset>5</scrolloffset>
+      <itemlayout height="80" width="1240">
+        <!-- List Item Background -->
+        <control type="image">
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>1240</width>
+          <height>80</height>
+          <texture colordiffuse="background_dark">-</texture>
+        </control>
+        
+        <!-- List Item Text -->
+        <control type="label">
+          <posx>20</posx>
+          <posy>15</posy>
+          <width>1200</width>
+          <height>50</height>
+          <font>BodyLarge</font>
+          <textcolor>text_primary</textcolor>
+          <selectedcolor>primary_blue</selectedcolor>
+          <label>$LISTITEM</label>
+        </control>
+      </itemlayout>
+      
+      <focusedlayout height="80" width="1240">
+        <!-- Focused Item Background -->
+        <control type="image">
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>1240</width>
+          <height>80</height>
+          <texture colordiffuse="surface_variant">-</texture>
+          <bordertexture border="2" colordiffuse="primary_blue">-</bordertexture>
+        </control>
+        
+        <!-- Focused Item Text -->
+        <control type="label">
+          <posx>20</posx>
+          <posy>15</posy>
+          <width>1200</width>
+          <height>50</height>
+          <font>BodyLarge</font>
+          <textcolor>primary_blue</textcolor>
+          <selectedcolor>primary_blue</selectedcolor>
+          <label>$LISTITEM</label>
+        </control>
+      </focusedlayout>
+    </control>
+    
+    <!-- Scrollbar -->
+    <control type="scrollbar" id="13">
+      <posx>1290</posx>
+      <posy>110</posy>
+      <width>20</width>
+      <height>600</height>
+      <texturesliderbackground colordiffuse="surface_variant">-</texturesliderbackground>
+      <texturesliderbar colordiffuse="primary_blue">-</texturesliderbar>
+      <texturesliderbarfocus colordiffuse="primary_blue_focus">-</texturesliderbarfocus>
+      <onup>3</onup>
+      <ondown>3</ondown>
+    </control>
+    
+    <!-- Footer / Buttons -->
+    <control type="group" id="200">
+      <posx>40</posx>
+      <posy>720</posy>
+      <width>1240</width>
+      <height>40</height>
+      
+      <!-- Divider -->
+      <control type="image">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1240</width>
+        <height>1</height>
+        <texture colordiffuse="surface_variant">-</texture>
+      </control>
+      
+      <!-- Info Text -->
+      <control type="label" id="2">
+        <posx>0</posx>
+        <posy>10</posy>
+        <width>1240</width>
+        <height>30</height>
+        <font>BodySmall</font>
+        <textcolor>text_secondary</textcolor>
+        <label></label>
+      </control>
+    </control>
+  </control>
+</window>

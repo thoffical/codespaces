@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="home" id="0">
+  <!-- Background -->
+  <backgroundcolor>background_dark</backgroundcolor>
+  
+  <!-- Top Navigation Bar -->
+  <control type="group" id="100">
+    <posx>0</posx>
+    <posy>0</posy>
+    <width>1920</width>
+    <height>80</height>
+    
+    <!-- Navigation Background -->
+    <control type="image">
+      <description>Top bar background</description>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1920</width>
+      <height>80</height>
+      <texture colordiffuse="surface">-</texture>
+    </control>
+    
+    <!-- Kodi Logo/Branding -->
+    <control type="label">
+      <description>App Title</description>
+      <posx>40</posx>
+      <posy>15</posy>
+      <width>400</width>
+      <height>50</height>
+      <font>TitleLarge</font>
+      <textcolor>text_primary</textcolor>
+      <label>Kodi</label>
+    </control>
+    
+    <!-- Profile/User indicator (placeholder) -->
+    <control type="label">
+      <description>User indicator</description>
+      <posx>1800</posx>
+      <posy>25</posy>
+      <width>100</width>
+      <height>30</height>
+      <font>BodySmall</font>
+      <textcolor>text_secondary</textcolor>
+      <label>User</label>
+      <align>right</align>
+    </control>
+  </control>
+  
+  <!-- Featured Content Section -->
+  <control type="group" id="200">
+    <posx>0</posx>
+    <posy>80</posy>
+    <width>1920</width>
+    <height>500</height>
+    
+    <!-- Featured Item Background -->
+    <control type="image">
+      <description>Featured content background</description>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1920</width>
+      <height>500</height>
+      <texture colordiffuse="background_darker">-</texture>
+    </control>
+    
+    <!-- Featured Image (Placeholder) -->
+    <control type="image">
+      <description>Featured image</description>
+      <posx>100</posx>
+      <posy>50</posy>
+      <width>800</width>
+      <height>400</height>
+      <texture border="10">$INFO[Skin.String(FeaturedImage)]</texture>
+      <aspectratio align="center" aligny="center">keep</aspectratio>
+    </control>
+    
+    <!-- Featured Title -->
+    <control type="label">
+      <description>Featured title</description>
+      <posx>950</posx>
+      <posy>80</posy>
+      <width>900</width>
+      <height>80</height>
+      <font>DisplayMedium</font>
+      <textcolor>text_primary</textcolor>
+      <label>Featured Content</label>
+      <wrapmultiline>true</wrapmultiline>
+    </control>
+    
+    <!-- Featured Description -->
+    <control type="textbox">
+      <description>Featured description</description>
+      <posx>950</posx>
+      <posy>170</posy>
+      <width>900</width>
+      <height>150</height>
+      <font>BodyMedium</font>
+      <textcolor>text_secondary</textcolor>
+      <text>Welcome to your Kodi media center. Browse your content library with a clean, modern interface inspired by Google TV.</text>
+    </control>
+    
+    <!-- Featured Action Button -->
+    <control type="button" id="201">
+      <description>Play button</description>
+      <posx>950</posx>
+      <posy>340</posy>
+      <width>200</width>
+      <height>50</height>
+      <font>LabelLarge</font>
+      <textcolor>text_primary</textcolor>
+      <focusedcolor>text_primary</focusedcolor>
+      <label>▶ Play</label>
+      <texturepath colordiffuse="primary_blue">-</texturepath>
+    </control>
+  </control>
+  
+  <!-- Content Grid Section - Watched -->
+  <control type="group" id="300">
+    <posx>0</posx>
+    <posy>600</posy>
+    <width>1920</width>
+    <height>300</height>
+    
+    <!-- Section Title -->
+    <control type="label">
+      <description>Recently Watched</description>
+      <posx>60</posx>
+      <posy>0</posy>
+      <width>400</width>
+      <height>40</height>
+      <font>HeadlineSmall</font>
+      <textcolor>text_primary</textcolor>
+      <label>Recently Watched</label>
+    </control>
+    
+    <!-- Divider Line -->
+    <control type="image">
+      <description>Section divider</description>
+      <posx>60</posx>
+      <posy>45</posy>
+      <width>1800</width>
+      <height>2</height>
+      <texture colordiffuse="surface_variant">-</texture>
+    </control>
+    
+    <!-- Content Item 1 -->
+    <control type="button" id="301">
+      <description>Content card 1</description>
+      <posx>60</posx>
+      <posy>70</posy>
+      <width>300</width>
+      <height>200</height>
+      <label></label>
+      <texturepath border="4" colordiffuse="surface_variant">-</texturepath>
+    </control>
+    
+    <!-- Content Item 2 -->
+    <control type="button" id="302">
+      <description>Content card 2</description>
+      <posx>400</posx>
+      <posy>70</posy>
+      <width>300</width>
+      <height>200</height>
+      <label></label>
+      <texturepath border="4" colordiffuse="surface_variant">-</texturepath>
+    </control>
+    
+    <!-- Content Item 3 -->
+    <control type="button" id="303">
+      <description>Content card 3</description>
+      <posx>740</posx>
+      <posy>70</posy>
+      <width>300</width>
+      <height>200</height>
+      <label></label>
+      <texturepath border="4" colordiffuse="surface_variant">-</texturepath>
+    </control>
+    
+    <!-- Content Item 4 -->
+    <control type="button" id="304">
+      <description>Content card 4</description>
+      <posx>1080</posx>
+      <posy>70</posy>
+      <width>300</width>
+      <height>200</height>
+      <label></label>
+      <texturepath border="4" colordiffuse="surface_variant">-</texturepath>
+    </control>
+    
+    <!-- Content Item 5 -->
+    <control type="button" id="305">
+      <description>Content card 5</description>
+      <posx>1420</posx>
+      <posy>70</posy>
+      <width>300</width>
+      <height>200</height>
+      <label></label>
+      <texturepath border="4" colordiffuse="surface_variant">-</texturepath>
+    </control>
+  </control>
+  
+  <!-- Bottom Status Bar -->
+  <control type="group" id="900">
+    <posx>0</posx>
+    <posy>1000</posy>
+    <width>1920</width>
+    <height>80</height>
+    
+    <!-- Status bar background -->
+    <control type="image">
+      <description>Bottom bar background</description>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1920</width>
+      <height>80</height>
+      <texture colordiffuse="surface">-</texture>
+    </control>
+    
+    <!-- Clock -->
+    <control type="label">
+      <description>Time display</description>
+      <posx>40</posx>
+      <posy>25</posy>
+      <width>200</width>
+      <height>30</height>
+      <font>time</font>
+      <textcolor>text_secondary</textcolor>
+      <label>$INFO[System.Time]</label>
+    </control>
+  </control>
+</window>

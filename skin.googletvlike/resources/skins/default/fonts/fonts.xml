@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fonts>
+  <!-- Font Definitions inspired by Google Material Design -->
+  
+  <!-- Display Fonts - Large headings -->
+  <fontset id="Large" idloc="31400">
+    <!-- Display Large - Hero text -->
+    <font>
+      <name>DisplayLarge</name>
+      <size>60</size>
+      <filename>Roboto-Regular.ttf</filename>
+      <style>bold</style>
+    </font>
+    
+    <!-- Display Medium -->
+    <font>
+      <name>DisplayMedium</name>
+      <size>45</size>
+      <filename>Roboto-Regular.ttf</filename>
+      <style>bold</style>
+    </font>
+    
+    <!-- Headline Large -->
+    <font>
+      <name>HeadlineLarge</name>
+      <size>32</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+    
+    <!-- Headline Medium -->
+    <font>
+      <name>HeadlineMedium</name>
+      <size>28</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+    
+    <!-- Headline Small -->
+    <font>
+      <name>HeadlineSmall</name>
+      <size>24</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+    
+    <!-- Title Large -->
+    <font>
+      <name>TitleLarge</name>
+      <size>22</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+    
+    <!-- Title Medium -->
+    <font>
+      <name>TitleMedium</name>
+      <size>16</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+    
+    <!-- Title Small -->
+    <font>
+      <name>TitleSmall</name>
+      <size>14</size>
+      <filename>Roboto-Medium.ttf</filename>
+      <style>bold</style>
+    </font>
+    
+    <!-- Body Fonts -->
+    <font>
+      <name>BodyLarge</name>
+      <size>16</size>
+      <filename>Roboto-Regular.ttf</filename>
+    </font>
+    
+    <font>
+      <name>BodyMedium</name>
+      <size>14</size>
+      <filename>Roboto-Regular.ttf</filename>
+    </font>
+    
+    <font>
+      <name>BodySmall</name>
+      <size>12</size>
+      <filename>Roboto-Regular.ttf</filename>
+    </font>
+    
+    <!-- Label Fonts -->
+    <font>
+      <name>LabelLarge</name>
+      <size>14</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+    
+    <font>
+      <name>LabelMedium</name>
+      <size>12</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+    
+    <font>
+      <name>LabelSmall</name>
+      <size>11</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+    
+    <!-- Special Purpose Fonts -->
+    <font>
+      <name>time</name>
+      <size>20</size>
+      <filename>Roboto-Light.ttf</filename>
+    </font>
+    
+    <font>
+      <name>subtitle</name>
+      <size>13</size>
+      <filename>Roboto-Regular.ttf</filename>
+    </font>
+    
+    <font>
+      <name>menu_main</name>
+      <size>18</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+  </fontset>
+  
+  <!-- Default fontset for 1080p -->
+  <fontset id="Default" idloc="31401">
+    <font>
+      <name>DisplayLarge</name>
+      <size>50</size>
+      <filename>Roboto-Regular.ttf</filename>
+      <style>bold</style>
+    </font>
+    
+    <font>
+      <name>HeadlineLarge</name>
+      <size>28</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+    
+    <font>
+      <name>TitleLarge</name>
+      <size>20</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+    
+    <font>
+      <name>BodyLarge</name>
+      <size>14</size>
+      <filename>Roboto-Regular.ttf</filename>
+    </font>
+    
+    <font>
+      <name>menu_main</name>
+      <size>16</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+  </fontset>
+  
+  <!-- Small fontset for 720p -->
+  <fontset id="Small" idloc="31402">
+    <font>
+      <name>DisplayLarge</name>
+      <size>36</size>
+      <filename>Roboto-Regular.ttf</filename>
+      <style>bold</style>
+    </font>
+    
+    <font>
+      <name>HeadlineLarge</name>
+      <size>22</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+    
+    <font>
+      <name>TitleLarge</name>
+      <size>16</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+    
+    <font>
+      <name>BodyLarge</name>
+      <size>12</size>
+      <filename>Roboto-Regular.ttf</filename>
+    </font>
+    
+    <font>
+      <name>menu_main</name>
+      <size>14</size>
+      <filename>Roboto-Medium.ttf</filename>
+    </font>
+  </fontset>
+</fonts>

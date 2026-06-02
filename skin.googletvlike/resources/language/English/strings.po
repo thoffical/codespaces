@@ -1,0 +1,66 @@
+# Kodi Language File
+# GoogleTV Like Skin - English strings
+
+msgctxt "#31000"
+msgid "GoogleTV Like"
+msgstr ""
+
+msgctxt "#31001"
+msgid "Recently Watched"
+msgstr ""
+
+msgctxt "#31002"
+msgid "Featured Content"
+msgstr ""
+
+msgctxt "#31003"
+msgid "Play"
+msgstr ""
+
+msgctxt "#31004"
+msgid "Watch Now"
+msgstr ""
+
+msgctxt "#31005"
+msgid "My Library"
+msgstr ""
+
+msgctxt "#31006"
+msgid "Search"
+msgstr ""
+
+msgctxt "#31007"
+msgid "Settings"
+msgstr ""
+
+msgctxt "#31008"
+msgid "Continue Watching"
+msgstr ""
+
+msgctxt "#31009"
+msgid "Recommendations"
+msgstr ""
+
+msgctxt "#31010"
+msgid "Browse All"
+msgstr ""
+
+msgctxt "#31011"
+msgid "No items"
+msgstr ""
+
+msgctxt "#31012"
+msgid "Loading..."
+msgstr ""
+
+msgctxt "#31013"
+msgid "Welcome"
+msgstr ""
+
+msgctxt "#31014"
+msgid "Kodi Home"
+msgstr ""
+
+msgctxt "#31015"
+msgid "Your Library"
+msgstr ""

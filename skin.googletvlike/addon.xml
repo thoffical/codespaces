@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.googletvlike" version="1.0.0" name="GoogleTV Like" provider-name="Kodi Community">
+  <requires>
+    <import addon="xbmc.gui" version="5.15.0"/>
+  </requires>
+  <extension point="xbmc.gui.skin" debugging="false">
+    <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+    <res width="1280" height="720" aspect="16:9" folder="720p"/>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+    <summary lang="en">A modern, clean Kodi skin inspired by Google TV</summary>
+    <description lang="en">GoogleTV Like is a modern, minimalist skin for Kodi inspired by Google TV's design language. Features a clean dark theme, card-based content layouts, and intuitive navigation.</description>
+    <disclaimer lang="en">This is a fan-inspired skin not affiliated with Google.</disclaimer>
+    <assets>
+      <icon>resources/media/icon.png</icon>
+      <fanart>resources/media/fanart.jpg</fanart>
+      <screenshot>resources/media/screenshot1.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>

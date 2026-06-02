@@ -1,0 +1,8 @@
+v1.0.0
+- Initial release
+- Home screen with grid-based content layout
+- Modern Google TV-inspired design
+- Dark theme with Google Blue accents
+- Clean typography and spacing
+- Support for 1080i and 720p resolutions
+

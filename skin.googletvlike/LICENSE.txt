@@ -1,0 +1,4 @@
+GPL-2.0-only License
+
+This skin is released under the GNU General Public License, version 2.
+See https://opensource.org/licenses/GPL-2.0 for details.
