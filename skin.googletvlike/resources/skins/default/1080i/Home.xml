@@ -1,231 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="home" id="0">
+<!-- GoogleTV Like Skin - Home Screen (1920x1080) -->
+<window id="0">
+  <defaultcontrol always="true">300</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+
   <!-- Background -->
-  <backgroundcolor>background_dark</backgroundcolor>
-  
+  <control type="image">
+    <left>0</left>
+    <top>0</top>
+    <width>1920</width>
+    <height>1080</height>
+    <texture>$VAR[color_background]</texture>
+  </control>
+
   <!-- Top Navigation Bar -->
   <control type="group" id="100">
-    <posx>0</posx>
-    <posy>0</posy>
+    <left>0</left>
+    <top>0</top>
     <width>1920</width>
     <height>80</height>
-    
-    <!-- Navigation Background -->
+
+    <!-- Nav Background -->
     <control type="image">
-      <description>Top bar background</description>
-      <posx>0</posx>
-      <posy>0</posy>
+      <left>0</left>
+      <top>0</top>
       <width>1920</width>
       <height>80</height>
-      <texture colordiffuse="surface">-</texture>
+      <texture>$VAR[color_surface]</texture>
     </control>
-    
-    <!-- Kodi Logo/Branding -->
+
+    <!-- Title -->
     <control type="label">
-      <description>App Title</description>
-      <posx>40</posx>
-      <posy>15</posy>
-      <width>400</width>
-      <height>50</height>
-      <font>TitleLarge</font>
-      <textcolor>text_primary</textcolor>
-      <label>Kodi</label>
-    </control>
-    
-    <!-- Profile/User indicator (placeholder) -->
-    <control type="label">
-      <description>User indicator</description>
-      <posx>1800</posx>
-      <posy>25</posy>
-      <width>100</width>
-      <height>30</height>
-      <font>BodySmall</font>
-      <textcolor>text_secondary</textcolor>
-      <label>User</label>
-      <align>right</align>
+      <left>40</left>
+      <top>20</top>
+      <width>500</width>
+      <height>40</height>
+      <font>HeadlineLarge</font>
+      <textcolor>$VAR[color_text_primary]</textcolor>
+      <label>GoogleTV Like</label>
     </control>
   </control>
-  
+
   <!-- Featured Content Section -->
   <control type="group" id="200">
-    <posx>0</posx>
-    <posy>80</posy>
-    <width>1920</width>
-    <height>500</height>
-    
-    <!-- Featured Item Background -->
+    <left>40</left>
+    <top>100</top>
+    <width>1840</width>
+    <height>350</height>
+
+    <!-- Featured Background -->
     <control type="image">
-      <description>Featured content background</description>
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>1920</width>
-      <height>500</height>
-      <texture colordiffuse="background_darker">-</texture>
+      <left>0</left>
+      <top>0</top>
+      <width>1840</width>
+      <height>350</height>
+      <texture>$VAR[color_surface_variant]</texture>
+      <bordersize>1</bordersize>
+      <bordercolor>$VAR[color_border]</bordercolor>
     </control>
-    
-    <!-- Featured Image (Placeholder) -->
-    <control type="image">
-      <description>Featured image</description>
-      <posx>100</posx>
-      <posy>50</posy>
-      <width>800</width>
-      <height>400</height>
-      <texture border="10">$INFO[Skin.String(FeaturedImage)]</texture>
-      <aspectratio align="center" aligny="center">keep</aspectratio>
-    </control>
-    
+
     <!-- Featured Title -->
     <control type="label">
-      <description>Featured title</description>
-      <posx>950</posx>
-      <posy>80</posy>
-      <width>900</width>
-      <height>80</height>
-      <font>DisplayMedium</font>
-      <textcolor>text_primary</textcolor>
-      <label>Featured Content</label>
-      <wrapmultiline>true</wrapmultiline>
+      <left>30</left>
+      <top>20</top>
+      <width>1000</width>
+      <height>50</height>
+      <font>DisplaySmall</font>
+      <textcolor>$VAR[color_text_primary]</textcolor>
+      <label>Featured</label>
     </control>
-    
+
     <!-- Featured Description -->
     <control type="textbox">
-      <description>Featured description</description>
-      <posx>950</posx>
-      <posy>170</posy>
-      <width>900</width>
-      <height>150</height>
-      <font>BodyMedium</font>
-      <textcolor>text_secondary</textcolor>
-      <text>Welcome to your Kodi media center. Browse your content library with a clean, modern interface inspired by Google TV.</text>
-    </control>
-    
-    <!-- Featured Action Button -->
-    <control type="button" id="201">
-      <description>Play button</description>
-      <posx>950</posx>
-      <posy>340</posy>
-      <width>200</width>
-      <height>50</height>
-      <font>LabelLarge</font>
-      <textcolor>text_primary</textcolor>
-      <focusedcolor>text_primary</focusedcolor>
-      <label>▶ Play</label>
-      <texturepath colordiffuse="primary_blue">-</texturepath>
+      <left>30</left>
+      <top>80</top>
+      <width>1400</width>
+      <height>240</height>
+      <font>BodyLarge</font>
+      <textcolor>$VAR[color_text_secondary]</textcolor>
+      <text>Welcome to GoogleTV Like - A modern, clean Kodi skin inspired by Google TV</text>
     </control>
   </control>
-  
-  <!-- Content Grid Section - Watched -->
+
+  <!-- Content Grid -->
   <control type="group" id="300">
-    <posx>0</posx>
-    <posy>600</posy>
-    <width>1920</width>
-    <height>300</height>
-    
-    <!-- Section Title -->
+    <left>40</left>
+    <top>480</top>
+    <width>1840</width>
+    <height>540</height>
+
+    <!-- Grid Title -->
     <control type="label">
-      <description>Recently Watched</description>
-      <posx>60</posx>
-      <posy>0</posy>
-      <width>400</width>
-      <height>40</height>
-      <font>HeadlineSmall</font>
-      <textcolor>text_primary</textcolor>
-      <label>Recently Watched</label>
+      <left>0</left>
+      <top>0</top>
+      <width>1000</width>
+      <height>50</height>
+      <font>HeadlineLarge</font>
+      <textcolor>$VAR[color_text_primary]</textcolor>
+      <label>Browse Content</label>
     </control>
-    
-    <!-- Divider Line -->
+
+    <!-- Card 1 -->
     <control type="image">
-      <description>Section divider</description>
-      <posx>60</posx>
-      <posy>45</posy>
-      <width>1800</width>
-      <height>2</height>
-      <texture colordiffuse="surface_variant">-</texture>
+      <left>0</left>
+      <top>60</top>
+      <width>350</width>
+      <height>450</height>
+      <texture>$VAR[color_surface]</texture>
+      <bordersize>1</bordersize>
+      <bordercolor>$VAR[color_border]</bordercolor>
     </control>
-    
-    <!-- Content Item 1 -->
-    <control type="button" id="301">
-      <description>Content card 1</description>
-      <posx>60</posx>
-      <posy>70</posy>
-      <width>300</width>
-      <height>200</height>
-      <label></label>
-      <texturepath border="4" colordiffuse="surface_variant">-</texturepath>
+
+    <!-- Card 2 -->
+    <control type="image">
+      <left>370</left>
+      <top>60</top>
+      <width>350</width>
+      <height>450</height>
+      <texture>$VAR[color_surface]</texture>
+      <bordersize>1</bordersize>
+      <bordercolor>$VAR[color_border]</bordercolor>
     </control>
-    
-    <!-- Content Item 2 -->
-    <control type="button" id="302">
-      <description>Content card 2</description>
-      <posx>400</posx>
-      <posy>70</posy>
-      <width>300</width>
-      <height>200</height>
-      <label></label>
-      <texturepath border="4" colordiffuse="surface_variant">-</texturepath>
+
+    <!-- Card 3 -->
+    <control type="image">
+      <left>740</left>
+      <top>60</top>
+      <width>350</width>
+      <height>450</height>
+      <texture>$VAR[color_surface]</texture>
+      <bordersize>1</bordersize>
+      <bordercolor>$VAR[color_border]</bordercolor>
     </control>
-    
-    <!-- Content Item 3 -->
-    <control type="button" id="303">
-      <description>Content card 3</description>
-      <posx>740</posx>
-      <posy>70</posy>
-      <width>300</width>
-      <height>200</height>
-      <label></label>
-      <texturepath border="4" colordiffuse="surface_variant">-</texturepath>
+
+    <!-- Card 4 -->
+    <control type="image">
+      <left>1110</left>
+      <top>60</top>
+      <width>350</width>
+      <height>450</height>
+      <texture>$VAR[color_surface]</texture>
+      <bordersize>1</bordersize>
+      <bordercolor>$VAR[color_border]</bordercolor>
     </control>
-    
-    <!-- Content Item 4 -->
-    <control type="button" id="304">
-      <description>Content card 4</description>
-      <posx>1080</posx>
-      <posy>70</posy>
-      <width>300</width>
-      <height>200</height>
-      <label></label>
-      <texturepath border="4" colordiffuse="surface_variant">-</texturepath>
-    </control>
-    
-    <!-- Content Item 5 -->
-    <control type="button" id="305">
-      <description>Content card 5</description>
-      <posx>1420</posx>
-      <posy>70</posy>
-      <width>300</width>
-      <height>200</height>
-      <label></label>
-      <texturepath border="4" colordiffuse="surface_variant">-</texturepath>
+
+    <!-- Card 5 -->
+    <control type="image">
+      <left>1480</left>
+      <top>60</top>
+      <width>350</width>
+      <height>450</height>
+      <texture>$VAR[color_surface]</texture>
+      <bordersize>1</bordersize>
+      <bordercolor>$VAR[color_border]</bordercolor>
     </control>
   </control>
-  
+
   <!-- Bottom Status Bar -->
   <control type="group" id="900">
-    <posx>0</posx>
-    <posy>1000</posy>
+    <left>0</left>
+    <top>1000</top>
     <width>1920</width>
     <height>80</height>
-    
-    <!-- Status bar background -->
+
+    <!-- Status Background -->
     <control type="image">
-      <description>Bottom bar background</description>
-      <posx>0</posx>
-      <posy>0</posy>
+      <left>0</left>
+      <top>0</top>
       <width>1920</width>
       <height>80</height>
-      <texture colordiffuse="surface">-</texture>
+      <texture>$VAR[color_surface]</texture>
     </control>
-    
-    <!-- Clock -->
+
+    <!-- Status Text -->
     <control type="label">
-      <description>Time display</description>
-      <posx>40</posx>
-      <posy>25</posy>
-      <width>200</width>
-      <height>30</height>
-      <font>time</font>
-      <textcolor>text_secondary</textcolor>
-      <label>$INFO[System.Time]</label>
+      <left>40</left>
+      <top>20</top>
+      <width>500</width>
+      <height>40</height>
+      <font>LabelLarge</font>
+      <textcolor>$VAR[color_text_secondary]</textcolor>
+      <label>Ready</label>
     </control>
   </control>
 </window>

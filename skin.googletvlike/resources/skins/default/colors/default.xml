@@ -1,41 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- GoogleTV Like Skin - Color Definitions -->
 <colors>
-  <!-- Primary Colors - Google Blue Theme -->
-  <color name="white">FFFFFFFF</color>
-  <color name="black">FF000000</color>
-  
-  <!-- Google Brand Colors -->
-  <color name="primary_blue">FF4285F4</color>
-  <color name="primary_blue_focus">FF357AE8</color>
-  <color name="secondary_blue">FF669DF6</color>
-  
-  <!-- Accent Colors (Google brand palette) -->
-  <color name="google_red">FFEA4335</color>
-  <color name="google_yellow">FBBC04FF</color>
-  <color name="google_green">FF34A853</color>
-  
-  <!-- Background Colors - Dark Theme -->
-  <color name="background_dark">FF0D0D0D</color>
-  <color name="background_darker">FF060606</color>
-  <color name="surface">FF1A1A1A</color>
-  <color name="surface_variant">FF2A2A2A</color>
-  
+  <!-- Primary Colors -->
+  <color name="color_primary">FF4285F4</color>
+  <color name="color_primary_dark">FF357AE8</color>
+  <color name="color_primary_light">FF669DF6</color>
+
+  <!-- Background Colors -->
+  <color name="color_background">FF0D0D0D</color>
+  <color name="color_background_dark">FF060606</color>
+  <color name="color_surface">FF1A1A1A</color>
+  <color name="color_surface_variant">FF2A2A2A</color>
+
   <!-- Text Colors -->
-  <color name="text_primary">FFFFFFFF</color>
-  <color name="text_secondary">FFB3B3B3</color>
-  <color name="text_tertiary">FF808080</color>
-  <color name="text_disabled">FF4D4D4D</color>
-  
+  <color name="color_text_primary">FFFFFFFF</color>
+  <color name="color_text_secondary">FFB3B3B3</color>
+  <color name="color_text_tertiary">FF808080</color>
+  <color name="color_text_disabled">FF4D4D4D</color>
+
   <!-- Status Colors -->
-  <color name="error">FFEA4335</color>
-  <color name="success">FF34A853</color>
-  <color name="warning">FBBC04FF</color>
-  
+  <color name="color_error">FFEA4335</color>
+  <color name="color_success">FF34A853</color>
+  <color name="color_warning">FFFBBC04</color>
+  <color name="color_info">FF4285F4</color>
+
   <!-- Overlay Colors -->
-  <color name="overlay_dark">CC000000</color>
-  <color name="overlay_light">4DFFFFFF</color>
-  
-  <!-- Focus/Selection -->
-  <color name="focus_color">FF4285F4</color>
-  <color name="focus_indicator">99FFFFFF</color>
+  <color name="color_overlay_dark">CC000000</color>
+  <color name="color_overlay_light">4DFFFFFF</color>
+
+  <!-- Border Colors -->
+  <color name="color_border">FF333333</color>
+  <color name="color_focus">FF4285F4</color>
 </colors>

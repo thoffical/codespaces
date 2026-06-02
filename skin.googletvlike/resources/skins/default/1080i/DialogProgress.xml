@@ -1,68 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog" id="101">
-  <!-- Progress Dialog - For operations like scanning, loading, etc. -->
-  
-  <backgroundcolor>background_dark</backgroundcolor>
-  
-  <!-- Semi-transparent overlay -->
+<!-- GoogleTV Like Skin - Progress Dialog (1920x1080) -->
+<window id="101">
+  <defaultcontrol always="true">1</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+
+  <!-- Overlay Background -->
   <control type="image">
-    <posx>0</posx>
-    <posy>0</posy>
+    <left>0</left>
+    <top>0</top>
     <width>1920</width>
     <height>1080</height>
-    <texture colordiffuse="overlay_dark">-</texture>
+    <texture>$VAR[color_overlay_dark]</texture>
   </control>
-  
+
   <!-- Dialog Container -->
   <control type="group">
-    <posx>400</posx>
-    <posy>450</posy>
-    <width>1120</width>
-    <height>180</height>
-    
-    <!-- Background -->
+    <left>640</left>
+    <top>400</top>
+    <width>640</width>
+    <height>280</height>
+
+    <!-- Dialog Background -->
     <control type="image">
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>1120</width>
-      <height>180</height>
-      <texture colordiffuse="surface">-</texture>
-      <bordertexture border="20">-</bordertexture>
+      <left>0</left>
+      <top>0</top>
+      <width>640</width>
+      <height>280</height>
+      <texture>$VAR[color_surface]</texture>
+      <bordersize>2</bordersize>
+      <bordercolor>$VAR[color_primary]</bordercolor>
     </control>
-    
+
     <!-- Title -->
     <control type="label" id="1">
-      <posx>40</posx>
-      <posy>20</posy>
-      <width>1040</width>
+      <left>30</left>
+      <top>30</top>
+      <width>580</width>
       <height>50</height>
-      <font>HeadlineSmall</font>
-      <textcolor>text_primary</textcolor>
-      <label></label>
+      <font>HeadlineLarge</font>
+      <textcolor>$VAR[color_text_primary]</textcolor>
+      <label>Loading...</label>
     </control>
-    
-    <!-- Progress Bar -->
-    <control type="progress" id="20">
-      <posx>40</posx>
-      <posy>80</posy>
-      <width>1040</width>
-      <height>6</height>
-      <texturebg colordiffuse="surface_variant">-</texturebg>
-      <textureleft colordiffuse="primary_blue">-</textureleft>
-      <texturemid colordiffuse="primary_blue">-</texturemid>
-      <textureright colordiffuse="primary_blue">-</textureright>
-    </control>
-    
-    <!-- Progress Text -->
-    <control type="label" id="30">
-      <posx>40</posx>
-      <posy>100</posy>
-      <width>1040</width>
+
+    <!-- Progress Description -->
+    <control type="textbox" id="2">
+      <left>30</left>
+      <top>90</top>
+      <width>580</width>
       <height>60</height>
       <font>BodyMedium</font>
-      <textcolor>text_secondary</textcolor>
-      <label></label>
-      <wrapmultiline>true</wrapmultiline>
+      <textcolor>$VAR[color_text_secondary]</textcolor>
+    </control>
+
+    <!-- Progress Bar -->
+    <control type="progress" id="3">
+      <left>30</left>
+      <top>160</top>
+      <width>580</width>
+      <height>30</height>
+      <texturebg>$VAR[color_surface_variant]</texturebg>
+      <lefttexture>$VAR[color_primary]</lefttexture>
+      <midtexture>$VAR[color_primary]</midtexture>
+      <righttexture>$VAR[color_primary]</righttexture>
+    </control>
+
+    <!-- Percentage Text -->
+    <control type="label">
+      <left>30</left>
+      <top>200</top>
+      <width>580</width>
+      <height>30</height>
+      <font>LabelMedium</font>
+      <textcolor>$VAR[color_text_tertiary]</textcolor>
+      <align>right</align>
     </control>
   </control>
 </window>
